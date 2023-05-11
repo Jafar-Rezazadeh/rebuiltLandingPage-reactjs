@@ -1,3 +1,6 @@
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
 //css
 import "./style.css";
 //icons
@@ -23,9 +26,17 @@ const Footer = () => {
             </a>
         )
     }
-    //Todo: animate 
+
+    const ref = useRef(null)
+    const isInView = useInView(ref, { once: true, amount: 0.5 })
+
+
     return (
-        <footer>
+        <motion.footer ref={ref}
+            initial={{ opacity: 0 }}
+            animate={isInView && { opacity: 0.8, transition: { duration: 1 } }}
+
+        >
             <div className="footerContainer">
                 <div className="row">
                     <div className="col1 col">
@@ -106,7 +117,7 @@ const Footer = () => {
                     <p>© 2023 blabla One Interiors</p>
                 </div>
             </div>
-        </footer>
+        </motion.footer>
     );
 }
 
