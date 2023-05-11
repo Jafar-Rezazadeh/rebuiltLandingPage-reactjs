@@ -45,7 +45,7 @@ const NavBar = () => {
                     {isSearchBarOpen &&
                         <>
                             <AiOutlineSearch className="searchBtn" style={{ backgroundColor: "greenyellow", fill: "black" }} onClick={() => {
-                                // Todo :make a page for search results
+
                                 if (searchValue !== "") {
                                     navigate("/search", { state: { Svalue: searchValue } });
                                     setsearchValue("");

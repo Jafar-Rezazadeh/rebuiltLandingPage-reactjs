@@ -69,7 +69,7 @@ const MediaSec = () => {
                 </div>
 
             </div>
-            {/* //Todo:  */}
+
             <div className="text-animate" ref={textAnimate}>
                 {txtAniIsInView && <>
                     <motion.h2

@@ -8,7 +8,7 @@ import "./style.css"
 //images
 import icon1 from "../../../assets/icons/service-icon-1.png";
 import icon2 from "../../../assets/icons/service-icon-2.png";
-// Todo: design the service section
+
 
 const OurServices = () => {
 
@@ -21,7 +21,7 @@ const OurServices = () => {
         viewEnter()
     }
 
-    //Todo: next section
+
 
     return (
         <div className="our-services" ref={ref}>

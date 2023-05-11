@@ -22,7 +22,7 @@ const renderItems = carouselData.map((item) => {
 })
 
 
-// Todo: design the carousel
+
 const CarouselPart = () => {
 
     const ref = useRef(null)

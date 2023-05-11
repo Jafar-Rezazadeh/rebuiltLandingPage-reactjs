@@ -7,7 +7,7 @@ import i2 from "../../../assets/2.jpg"
 import "./style.css"
 
 const Banner = () => {
-    // Todo: use framer motion to animate (useInView(ref,{ once:true , amount: 0.5 })) to when the banner on view
+
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true, amount: 0.5 })
 

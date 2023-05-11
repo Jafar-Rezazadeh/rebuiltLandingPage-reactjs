@@ -14,7 +14,7 @@ const SearchPage = (props) => {
                 {flag = data.map(el => {
                     if (el.title.includes(Svalue)) {
                         return (
-                            // Todo: design the search page
+
                             <div className="resault" key={el.id} >
                                 <a href="/" ><h1 >{el.title}</h1></a>
                                 <p>{el.body.substring(0, 100)}...</p>
