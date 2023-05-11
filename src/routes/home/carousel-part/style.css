@@ -1,0 +1,98 @@
+.carousel-container {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.carousel-container .heads {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.carousel-container .heads>a {
+    text-decoration: none;
+    color: rgb(0, 169, 158);
+    font-size: 38.5px;
+}
+
+.carousel-container a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 114, 206);
+    padding-top: 15px;
+
+}
+
+.carousel-container .heads p {
+    font-size: 16px;
+    color: rgb(125, 127, 131);
+}
+
+.carousel-container .carousel-main-c {
+    width: 80%;
+    margin-top: 25px;
+}
+
+.carousel-container .carousel-main-c .item {
+    width: min-content;
+}
+
+.carousel-container .carousel-main-c .item:hover {
+    filter: brightness(1.5);
+}
+
+.carousel-container .carousel-main-c .item img {
+    height: 72px;
+    width: 98px;
+}
+
+
+
+
+/* * carousel design */
+#root>div>div.homePage>div.carousel-container>div>div>div {
+    overflow: visible;
+}
+
+#root>div>div.homePage>div.carousel-container>div.carousel-main-c>div>div>div>ul li {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-container .arrowRight {
+    border: none;
+    right: -40px;
+    position: absolute;
+    top: 0;
+    padding: 50px 10px;
+    background-color: transparent;
+}
+
+.carousel-container .arrowLeft {
+    border: none;
+    left: -40px;
+    position: absolute;
+    top: 0;
+    padding: 50px 10px;
+    background-color: transparent;
+}
+
+.carousel-container .arrowRight:hover,
+.carousel-container .arrowLeft:hover {
+    color: rgb(0, 169, 158);
+    background-color: rgb(214, 214, 214);
+}
+
+.carousel-container .arrowRight svg,
+.carousel-container .arrowLeft svg {
+    stroke-width: 100;
+    height: 1.2em;
+    width: 1.2em;
+}

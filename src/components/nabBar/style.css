@@ -1,0 +1,174 @@
+.navBar {
+    display: inline-flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    direction: rtl;
+    align-items: center;
+    user-select: none;
+    position: fixed;
+    z-index: 100;
+
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+.navBar .selects {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    direction: rtl;
+    align-items: center;
+    user-select: none;
+    position: absolute;
+}
+
+.navbuttons {
+    position: relative;
+    right: 50px;
+    color: black;
+}
+
+.navbuttons .menuBtn {
+    fill: black;
+    background-color: white;
+}
+
+.navbuttons .searchBtn {
+    background-color: rgb(0, 114, 206);
+    fill: white;
+}
+
+.navbuttons .serachBtnClose {
+    background-color: black;
+
+}
+
+.navbuttons .serachBtnClose path {
+    stroke: white;
+}
+
+.navbuttons>* {
+    width: 1.3em;
+    height: 1.3em;
+    padding: 20px;
+    cursor: pointer;
+
+}
+
+
+.navlogo {
+    position: relative;
+    left: 50px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 2px white;
+
+}
+
+.navlogo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.menuOpened {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+}
+
+.menuOpened .menuBtn {
+    fill: black;
+    background-color: white;
+    width: 1.3em;
+    height: 1.3em;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.searchBarInput {
+    width: 0;
+    padding: 30px 0;
+    border: none;
+    position: absolute;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 5px 0 0 5px;
+}
+
+.searchBarInput::-webkit-search-cancel-button {
+
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    width: 10px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjEyMy4wNXB4IiBoZWlnaHQ9IjEyMy4wNXB4IiB2aWV3Qm94PSIwIDAgMTIzLjA1IDEyMy4wNSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTIzLjA1IDEyMy4wNTsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTEyMS4zMjUsMTAuOTI1bC04LjUtOC4zOTljLTIuMy0yLjMtNi4xLTIuMy04LjUsMGwtNDIuNCw0Mi4zOTlMMTguNzI2LDEuNzI2Yy0yLjMwMS0yLjMwMS02LjEwMS0yLjMwMS04LjUsMGwtOC41LDguNQ0KCQljLTIuMzAxLDIuMy0yLjMwMSw2LjEsMCw4LjVsNDMuMSw0My4xbC00Mi4zLDQyLjVjLTIuMywyLjMtMi4zLDYuMSwwLDguNWw4LjUsOC41YzIuMywyLjMsNi4xLDIuMyw4LjUsMGw0Mi4zOTktNDIuNGw0Mi40LDQyLjQNCgkJYzIuMywyLjMsNi4xLDIuMyw4LjUsMGw4LjUtOC41YzIuMy0yLjMsMi4zLTYuMSwwLTguNWwtNDIuNS00Mi40bDQyLjQtNDIuMzk5QzEyMy42MjUsMTcuMTI1LDEyMy42MjUsMTMuMzI1LDEyMS4zMjUsMTAuOTI1eiIvPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=);
+    background-size: 10px 10px;
+}
+
+
+.menuOpened .links {
+    display: inline-flex;
+    gap: 50px;
+}
+
+.menuOpened .links div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.menuOpened .links ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+.menuOpened .links ul li {
+    margin-top: 20px;
+}
+
+.menuOpened .links h3 {
+    color: white;
+}
+
+.menuOpened .links a {
+    text-decoration: none;
+    color: white;
+}
+
+.menuOpened .links a:hover {
+    color: aquamarine;
+}
+
+.socialMedia {
+    display: inline-flex;
+    justify-content: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.socialMedia-icons {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.socialMedia-icons:hover {
+    fill: aquamarine;
+}

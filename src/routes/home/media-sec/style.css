@@ -1,0 +1,167 @@
+.media-sec {
+    margin-top: 100px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+
+
+}
+
+.media-sec .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.media-sec .container>div {
+    padding-top: 30px;
+}
+
+.media-sec h2 {
+    color: rgb(0, 169, 158);
+    font-weight: bold;
+}
+
+.media-sec a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.media-sec .container .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+/* * ================left col================ */
+.media-sec .container .row .columnLeft {
+    padding-right: 50px;
+}
+
+.media-sec .container .row .columnLeft a {
+    position: relative;
+}
+
+.media-sec .container .row .columnLeft a .playIcon {
+    fill: white;
+    position: absolute;
+    left: calc(50% - 25px);
+    bottom: 250px;
+    height: 70px;
+    width: 70px;
+}
+
+.media-sec .container .row .columnLeft a .desc {
+    position: relative;
+}
+
+.media-sec .container .row .columnLeft a .desc h1 {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    margin: 0;
+    color: white;
+    background: linear-gradient(transparent, black);
+}
+
+.media-sec .container .row .columnLeft a img {
+    width: 450px;
+    height: 500px;
+}
+
+.media-sec .container .row .columnLeft a:hover {
+    filter: brightness(0.7);
+}
+
+.media-sec .container .row .columnRight {
+    width: 100%;
+}
+
+/* * ================right col================ */
+.media-sec .container .row .columnRight .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.media-sec .container .row .columnRight .row a {
+    height: 100%;
+    border: 1px solid rgb(219, 219, 219);
+    padding: 0 20px;
+    width: 300px;
+}
+
+.media-sec .container .row .columnRight .row a:hover .arrowIcon {
+    fill: rgb(0, 114, 206);
+}
+
+.media-sec .container .row .columnRight .row a article {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.media-sec .container .row .columnRight .row a article ul {
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.media-sec .container .row .columnRight .row a article ul li:first-child {
+    color: rgb(0, 114, 206);
+}
+
+.media-sec .container .row .columnRight .row a article ul li:last-child {
+    color: rgb(0, 114, 206);
+    font-weight: bold;
+}
+
+.media-sec .container .row .columnRight .row a article .arrowIcon {
+    margin-top: auto;
+    margin-bottom: 20px;
+    height: 30px;
+    width: 30px;
+    fill: rgb(125, 127, 131);
+}
+
+/* *text animation section */
+.text-animate {
+
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.text-animate .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 60px;
+    color: rgb(125, 127, 131);
+
+}
+
+.text-animate .row .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.text-animate .row .item span {
+    font-weight: bold;
+    font-size: 70px;
+}

@@ -1,0 +1,77 @@
+.our-services {
+    background-image: url(../../../assets/services.jpg);
+    height: 490px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.our-services .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.our-services .container h1 {
+    color: white;
+    text-transform: capitalize;
+}
+
+.our-services .container .items {
+    display: inline-flex;
+    justify-content: space-around;
+
+}
+
+.our-services .container .items .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+    text-transform: capitalize;
+    text-align: center;
+    text-align-last: center;
+}
+
+
+.our-services .container .items .item img {
+    height: 62px;
+    width: 62px;
+}
+
+
+.our-services .container .items .item .title {
+    color: white;
+    padding: 20px;
+    font-size: large;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.our-services .container .items .item p {
+    color: white;
+}
+
+.our-services .container .items .item .read-more {
+    color: aqua;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.our-services .container .items .item .read-more:hover {
+    color: white;
+}
+
+.our-services .container .items .item .read-more svg {
+
+    margin-left: 3px;
+    height: 20px;
+    width: 20px;
+}
