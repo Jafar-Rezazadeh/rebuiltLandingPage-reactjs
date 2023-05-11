@@ -34,7 +34,7 @@ const Footer = () => {
     return (
         <motion.footer ref={ref}
             initial={{ opacity: 0 }}
-            animate={isInView && { opacity: 0.8, transition: { duration: 1 } }}
+            animate={isInView && { opacity: 1, transition: { duration: 1 } }}
 
         >
             <div className="footerContainer">
