@@ -6,7 +6,7 @@
 
 $~~~~~~~~~~~$
 
-# [LIVE DEMO](https://rebuilt-landing-page-upcw-fyjhplzyf-jafar-rezazadeh.vercel.app/)
+# [LIVE DEMO](https://rebuilt-landing-page-reactjs.vercel.app/)
 
 ## Preview
 
